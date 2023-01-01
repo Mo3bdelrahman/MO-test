@@ -38,6 +38,7 @@ app.get("/about", (req, res) => {
   });
 });
 
+//creating the end point of backend
 app.get("/weather", (req, res) => {
   if (!req.query.adress) {
     return res.send({ error: "you must provide us an Adress" });
