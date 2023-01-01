@@ -5,6 +5,7 @@ const request = require("request");
 const geoCode = require("./utilis/geocode");
 const forecast = require("./utilis/forcast");
 const app = express();
+const port = process.env.Port || 3000;
 
 //define paths for express get that files to config
 const publicDirPath = path.join(__dirname, "../public");
@@ -71,6 +72,6 @@ app.get("*", (req, res) => {
     errormsg: "Page not found",
   });
 });
-app.listen(3000, () => {
-  console.log("server is up in port 3000");
+app.listen(port, () => {
+  console.log("server is up in port " + port);
 });

@@ -15,7 +15,7 @@ weatherform.addEventListener("submit", (e) => {
     message1.textContent = "Please Enter Adress First";
     message2.textContent = "";
   } else {
-    const url = "http://localhost:3000/weather?adress=" + searchbox.value;
+    const url = "/weather?adress=" + searchbox.value;
 
     fetch(url).then((response) => {
       response.json().then((data) => {
