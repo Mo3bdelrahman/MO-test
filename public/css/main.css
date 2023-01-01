@@ -1,0 +1,21 @@
+body{
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-bottom: 20px;
+}
+footer{
+    color: #888;
+    padding-top: 10px;
+    margin-top: 100px;
+    border-top: solid 1px rgb(199, 199, 199);
+}
+a{
+    text-decoration: none;
+    color: #888;
+    margin-right: 16px;
+}
+p{
+    margin-top: 40px;
+}
