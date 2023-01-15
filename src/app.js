@@ -5,7 +5,7 @@ const request = require("request");
 const geoCode = require("./utilis/geocode");
 const forecast = require("./utilis/forcast");
 const app = express();
-const port = process.env.Port || 3000;
+const port = process.env.Port || 4000;
 
 //define paths for express get that files to config
 const publicDirPath = path.join(__dirname, "../public");
